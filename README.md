@@ -1,17 +1,26 @@
 meteor-jquery-ui-sortable
 =========================
 
-jQueryUI's sortable interaction, minus theming CSS and packaged for Meteor. Extracted from jQueryUI 1.10.3 and relies on jQuery 1.9.1.
+[Sortable](http://jqueryui.com/sortable) is a jQuery UI behaviour for
+interactively drag-reordering table rows. This is from jQueryUI 1.10.3.
 
-All rights to jqueryui-sortable are with the original author. See http://jqueryui.com/sortable/
+## Why separate?
 
-## Installation
+We ran into some trouble using the [simple port of
+jQueryUI](https://github.com/TimHeckel/meteor-jquery-ui) because of the [known
+CSS conflicts with
+Bootstrap](https://github.com/TimHeckel/meteor-jquery-ui-bootstrap). Rather
+than add another package to solve the problem of two packages fighting, we
+custom-packaged only the behavioural part of jQueryUI we needed and sidestepped
+the jQueryUI theming entirely.
 
-Install via atmosphere.
+## How to install
+1. `npm install -g meteorite` (if not already installed)
+2. `mrt add jqueryui-sortable`
+3. For the simplest invocation, have a `<table>` with a multiple-row `<tbody>` in a template, and call `$('tbody').sortable()` in its `.rendered()` event.
 
-## Example
+## Documentation
 
-    Template.myTemplate.rendered = function() {
-      var opts = {}; // something more here, obviously
-      $('tbody').sortable(opts);
-    }
+http://api.jqueryui.com/sortable/
+
+
