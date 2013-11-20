@@ -1,0 +1,10 @@
+{
+  "name": "jquery-ui-sortable",
+  "description": "jQuery UI 'sortable' behaviour, unstyled",
+  "homepage": "https://github.com/rgm/meteor-jquery-ui-sortable",
+  "author": "Ryan McCuaig <ryan@ryanmccuaig.net>",
+  "version": "1.10.3",
+  "git": "https://github.com/rgm/meteor-jquery-ui-sortable.git"
+}
+
+
