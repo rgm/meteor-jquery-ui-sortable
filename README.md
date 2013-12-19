@@ -16,7 +16,7 @@ the jQueryUI theming entirely.
 
 ## How to install
 1. `npm install -g meteorite` (if not already installed)
-2. `mrt add jqueryui-sortable`
+2. `mrt add jquery-ui-sortable`
 3. For the simplest invocation, have a `<table>` with a multiple-row `<tbody>` in a template, and call `$('tbody').sortable()` in its `.rendered()` event.
 
 ## Documentation
